@@ -1,0 +1,105 @@
+/* Styles for About Us Section */
+
+/* General Container Styling */
+.container-2 {
+  width: 1200px; /* Set width to 1200px */
+  height: 706.183px; /* Set height to 706.183px */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #161616; /* Set background to white */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+/* About Section */
+.about-section {
+  background-color: #ffffff; /* Background white */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-size: 28px;
+  color: #ff0000; /* Red font */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-section p {
+  text-align: justify;
+  font-size: 16px;
+  color: #333; /* Keeping content text readable */
+}
+
+/* Mission and Vision Section */
+.mission-vision-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  background-color: #000000; /* Background white */
+}
+
+.mission, .vision {
+  flex: 1;
+  background-color: #ffffff; /* Background white */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3, .vision h3 {
+  font-size: 24px;
+  color: #ff0000; /* Red font */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mission p, .vision p {
+  text-align: justify;
+  font-size: 16px;
+  color: #333; /* Keeping content text readable */
+}
+
+/* Feedback Section */
+.feedback-section {
+  background-color: #ffffff; /* Background white */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section h2 {
+  font-size: 28px;
+  color: #ff0000; /* Red font */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.feedback img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.feedback blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+.feedback cite {
+  font-size: 14px;
+  color: #999;
+  margin-left: auto;
+}

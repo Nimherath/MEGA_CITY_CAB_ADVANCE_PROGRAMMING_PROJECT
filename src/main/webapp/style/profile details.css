@@ -1,0 +1,65 @@
+/* Flexbox Wrapper to center profile details */
+.wrapper {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;
+    min-height: 70%;         /* Ensure full viewport height */
+    background-color: #181616;; /* Optional: background for the page */
+    margin-top: 100px;
+}
+
+/* Profile details container */
+.profile-details {
+    width: 700px;             /* Fixed width */
+    height: 514px;            /* Fixed height */
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.profile-details h2 {
+    text-align: center;
+    color: #a82d2d;
+    margin-bottom: 20px;
+}
+
+.profile-details p {
+    color: black;
+}
+
+.personal-info, .password-info, .reservation-info {
+    margin-bottom: 20px;
+}
+
+.personal-info h3, .password-info h3, .reservation-info h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.edit-profile {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #a82d2d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-profile:hover {
+    background-color: #8b2323;
+}
+
+.edit-password {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.edit-password:hover {
+    color: #0056b3;
+}

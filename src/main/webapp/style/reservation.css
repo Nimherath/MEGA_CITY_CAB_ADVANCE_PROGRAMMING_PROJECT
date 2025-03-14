@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+
+.reservation-container {
+    background: url('images/wanda-banner.jpg') no-repeat center center/cover; /* Add your background image here */
+    text-align: center;
+    width: 100%;
+    padding: 170px;
+    background-color: rgba(0, 0, 0, 0.7); /* Optional: Adds transparency for better readability */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Optional: Adds a shadow effect */
+}
+  
+
+  .reservation-header h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .reservation-header h1:before,
+  .reservation-header h1:after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 10px;
+  }
+  
+  .reservation-content h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .confirmation-box {
+    background: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .confirmation-box h3 {
+    color: #FF0000;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .confirmation-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .confirmation-box button {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirmation-box button:hover {
+    background-color: #FF4D4D;
+  }
