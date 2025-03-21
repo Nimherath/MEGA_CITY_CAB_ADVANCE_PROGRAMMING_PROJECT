@@ -13,7 +13,7 @@
     float rating = 0.0;
 
     try {
-        String dbURL = "jdbc:mysql://localhost:3308/mega_city_cab";
+        String dbURL = "jdbc:mysql://localhost:3306/mega_city_cab";
         String dbUser = "root";
         String dbPassword = "12345678";
         Class.forName("com.mysql.cj.jdbc.Driver");

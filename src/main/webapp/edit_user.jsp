@@ -82,7 +82,7 @@
 
             try {
                 // Database connection details
-                String dbURL = "jdbc:mysql://localhost:3308/mega_city_cab";
+                String dbURL = "jdbc:mysql://localhost:3306/mega_city_cab";
                 String dbUser = "root";
                 String dbPassword = "12345678";
 

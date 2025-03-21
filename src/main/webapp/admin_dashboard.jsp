@@ -113,7 +113,7 @@
                 </a>
             </li>
              <li class="nav-item">
-                <a href="manage_booking.jsp" class="nav-link">
+                <a href="manage_bookings.jsp" class="nav-link">
                    Bookings
                     <span class="underline"></span>
                 </a>
@@ -168,7 +168,7 @@
             ResultSet rs = null;
 
             try {
-                String dbURL = "jdbc:mysql://localhost:3308/mega_city_cab";
+                String dbURL = "jdbc:mysql://localhost:3306/mega_city_cab";
                 String dbUser = "root";
                 String dbPassword = "12345678";
 
