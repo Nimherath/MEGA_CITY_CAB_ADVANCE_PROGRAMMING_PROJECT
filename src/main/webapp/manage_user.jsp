@@ -87,7 +87,7 @@
                 </a>
             </li>
              <li class="nav-item">
-                <a href="manage_booking.jsp" class="nav-link">
+                <a href="manage_bookings.jsp" class="nav-link">
                    Bookings
                     <span class="underline"></span>
                 </a>
