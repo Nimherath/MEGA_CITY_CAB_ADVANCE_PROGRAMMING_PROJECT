@@ -139,7 +139,7 @@
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
 
-                String sql = "SELECT taxi_type, pickup_date, pickup_location, dropoff_location, fare, booking_id FROM bookings WHERE user_email = ?";
+                String sql = "SELECT taxi_type, pickup_date, pickup_location, dropoff_location, fare,id FROM bookings WHERE user_email = ?";
                 stmt = conn.prepareStatement(sql);
                 stmt.setString(1, userEmail);
                 rs = stmt.executeQuery();
@@ -155,7 +155,7 @@
             <p><strong>Dropoff:</strong> <%= rs.getString("dropoff_location") %></p>
             <p><strong>Fare:</strong> $<%= rs.getString("fare") %></p>
             <!-- Pay Button -->
-            <a href="payment.jsp?fare=<%= rs.getString("fare") %>&booking_id=<%= rs.getString("booking_id") %>" class="btn">Pay</a>
+            <a href="payment.jsp?fare=<%= rs.getString("fare") %>&id=<%= rs.getString("id") %>" class="btn">Pay</a>
         </div>
         <%  
                 }

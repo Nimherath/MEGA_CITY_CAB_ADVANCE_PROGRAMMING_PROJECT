@@ -4,7 +4,7 @@
 <%
     // Retrieve fare and booking ID from the URL
     String fare = request.getParameter("fare");
-    String bookingId = request.getParameter("booking_id");
+    String bookingId = request.getParameter("id");
 %>
 
 <!DOCTYPE html>

@@ -17,7 +17,6 @@ import java.util.logging.Logger;
 import javax.mail.*;
 import javax.mail.internet.*;
 
-
 public class BookingServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private static final Logger LOGGER = Logger.getLogger(BookingServlet.class.getName());
@@ -43,6 +42,9 @@ public class BookingServlet extends HttpServlet {
         String pickupTime = request.getParameter("time");
         String taxiType = request.getParameter("taxi");
 
+        // Default fare set to $10
+        double fare = 10.00;
+
         Connection conn = null;
         PreparedStatement stmt = null;
 
@@ -59,7 +61,7 @@ public class BookingServlet extends HttpServlet {
             conn = DriverManager.getConnection(dbURL, dbUser, dbPassword);
 
             // Insert booking data into the database
-            String sql = "INSERT INTO bookings (user_email, full_name, phone, pickup_location, dropoff_location, pickup_date, pickup_time, taxi_type) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO bookings (user_email, full_name, phone, pickup_location, dropoff_location, pickup_date, pickup_time, taxi_type, fare) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, userEmail);
             stmt.setString(2, fullName);
@@ -69,6 +71,7 @@ public class BookingServlet extends HttpServlet {
             stmt.setString(6, pickupDate);
             stmt.setString(7, pickupTime);
             stmt.setString(8, taxiType);
+            stmt.setDouble(9, fare);  // Inserting the default fare of $10
 
             // Execute query
             int rowsInserted = stmt.executeUpdate();
@@ -140,7 +143,8 @@ public class BookingServlet extends HttpServlet {
                     "📍 Dropoff: " + dropoffLocation + "\n" +
                     "📅 Date: " + pickupDate + "\n" +
                     "⏰ Time: " + pickupTime + "\n" +
-                    "🚖 Taxi Type: " + taxiType + "\n\n" +
+                    "🚖 Taxi Type: " + taxiType + "\n" +
+                    "💵 Fare: $10.00\n\n" +
                     "Thank you for booking with Mega City Cab! 🚖");
 
             Transport.send(message);
