@@ -131,7 +131,7 @@
         try {
             // Database connection
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3308/mega_city_cab", "root", "12345678");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mega_city_cab", "root", "12345678");
 
             // Fetch taxis from database
             String sql = "SELECT * FROM taxis";
